@@ -4,3 +4,7 @@ let promise = new Promise((resolve, reject) =>{
 	console.log('get me to execute');
 	resolve();
 });
+
+promise.then(()=>{
+
+});

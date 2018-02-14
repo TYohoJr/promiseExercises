@@ -5,15 +5,25 @@
 let promise = new Promise((resolve, reject)=>{
 	
 	let evaluation = 2+2;
-	let guess = 4;
+	let guess = 5;
 
 	if (evaluation === guess){
-		resolve();
+		resolve("resolveddd");
 	} else {
-		reject();
+		reject("rejecteddd");
 	}
 });
-
+//p.then(onFulfilled[, onRejected]);
+promise.then((obj)=>{
+	console.log(obj)
+}, (obj2)=>{
+	console.log(Error(obj2))
+});
 //modify the code to pass the string "your guess is correct!" in the resolve and "your guess is wrong dum dum" in the rejection
 //then, below write code to run the promise. 
 //finally, modify the innards of the promise above to throw the rejection
+/*p.then(function(value) {
+  // fulfillment
+}, function(reason) {
+  // rejection
+});*/

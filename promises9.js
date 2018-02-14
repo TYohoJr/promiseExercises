@@ -15,16 +15,17 @@ let promise2 = new Promise((resolve, reject)=>{
 });
 
 let promise3 = new Promise((resolve, reject)=>{
+        reject();
 	setTimeout(()=>{
 		resolve("is a terrible movie");
 	}, 300);
 });
 
-var allPromises = [promise1, promise2];
+var allPromises = [promise1, promise2, promise3];
 
 Promise.all(allPromises).then((values)=>{
         console.log(values);
-}, (error)={
-	console.log(error)
+}, ()=>{
+	console.log(Error("Fail"))
 });
 

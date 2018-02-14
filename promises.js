@@ -11,7 +11,7 @@ var promise = new Promise((resolve, reject)=>{
 
 });
 
-console.log(promise);
+//console.log(promise);
 
 //execute the file to see the output - notice that its just a 
 //dang promise object. A promise doesn't do anything until 
@@ -20,6 +20,6 @@ console.log(promise);
 //comment the console log above, and comment out the code below
 //to see how you use the then method 
 
-// promise.then(()=>{
-// 	console.log('running code after promise');
-// });
+ promise.then(()=>{
+ 	console.log('running code after promise');
+ });

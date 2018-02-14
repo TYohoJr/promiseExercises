@@ -9,9 +9,8 @@
 //where is that function? It's the second arg to the then() method!
 //read and run the code below to see it work.
 
- 
 let promise = new Promise((resolve, reject)=>{
-	reject();
+	reject(Error("oosp"));
 })
 
 promise.then(()=>{

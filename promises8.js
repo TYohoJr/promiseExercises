@@ -14,7 +14,7 @@ let promise2 = new Promise((resolve, reject)=>{
 
 var allPromises = [promise1, promise2];
 
-Promise.all(allPromises).then((values)=>{
+Promise.all([promise1, promise2]).then((values)=>{
 	console.log(values);
 });
 

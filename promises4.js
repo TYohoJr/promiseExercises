@@ -10,7 +10,7 @@
 //read and run the code below to see it work.
 
 let promise = new Promise((resolve, reject)=>{
-	reject(Error("oosp"));
+	reject();
 })
 
 promise.then(()=>{

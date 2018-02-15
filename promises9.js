@@ -26,6 +26,5 @@ var allPromises = [promise1, promise2, promise3];
 Promise.all(allPromises).then((values)=>{
         console.log(values);
 }, ()=>{
-	console.log(Error("Fail"))
+	console.log(Error("FAIL"))
 });
-

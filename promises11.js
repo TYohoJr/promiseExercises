@@ -19,5 +19,5 @@ let test3 = axios.get('https://pokeapi.co/api/v2/pokemon/3/').then((response)=>{
 let allPokemon = [test1, test2, test3];
 
 Promise.all(allPokemon).then((values)=>{
-    console.log(`${values[0]}, ${values[1]}, ${values[2]}`);
+    console.log(`${values[0]}, ${values[1]}, ${values[2]}`)
 })

@@ -16,7 +16,7 @@ var promise = new Promise((resolve, reject) => {
 //dang promise object. A promise doesn't do anything until 
 //tell it to. Essentially, you run a promise by using the
 //"then" method on the promise object
-//comment the console log above, and comment out the code below
+//comment the console log above, and uncomment out the code below
 //to see how you use the then method 
 
  promise.then(()=>{

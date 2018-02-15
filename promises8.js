@@ -12,7 +12,10 @@ let promise2 = new Promise((resolve, reject)=>{
 	}, 300)
 });
 
-var allPromises = [promise1, promise2];
+let getDude = promise1;
+let getMyCar = promise2;
+
+var allPromises = [getDude, getMyCar];
 
 Promise.all([promise1, promise2]).then((values)=>{
 	console.log(values[0] + values[1]);

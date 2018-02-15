@@ -9,7 +9,5 @@ var axios = require('axios');
 //I've written the code below, but I want you guys to modify it to console log the name of the pokemon. Be sure to account for errors! 
 
 axios.get('https://pokeapi.co/api/v2/pokemon/1/').then((response)=>{
-    console.log(response.name);
+   console.log(response.data.name)
 })
-
-

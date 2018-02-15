@@ -1,1 +1,9 @@
-//Chain a few promises together using axios and pokemon api to console log "here's three pokemon from the api: {name1}, {name2}, {name3}
+
+var axios = require('axios');
+axios.get('https://pokeapi.co/api/v2/pokemon/').then((response)=>{
+    for(var something in response){
+        if(response[something].name){
+        console.log(response[something].name)
+        }
+    }
+})

@@ -5,10 +5,9 @@
 
 //here's what they look like :
 
-var promise = new Promise((resolve, reject)=>{
+var promise = new Promise((resolve, reject) => {
 	console.log('running some code inside promise');
 	resolve();
-
 });
 
 //console.log(promise);

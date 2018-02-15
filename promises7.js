@@ -16,7 +16,6 @@ let promise = new Promise((resolve, reject)=>{
 			}
 		});
 	}, 1000);
-
 });
 
 promise.then((obj)=>{

@@ -6,5 +6,5 @@ let promise = new Promise((resolve, reject) =>{
 });
 
 promise.then(()=>{
-
+//	console.log(`promise success`);
 });
